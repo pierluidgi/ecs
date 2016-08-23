@@ -66,6 +66,11 @@ add(Block, ParentCommentKey, Comment) ->
   ecs_add:add(Block, ParentCommentKey, Comment).
 
 
+-spec merge(block(), list()) -> {ok, block()}|err_answer().
+merge(Block, Comments) ->
+  ecs_merge:merge(Block, Comments).
+
+
 -spec del(block(), binary()) -> {ok, block()}|{comment_not_found, list()}|err_answer().
 del(Block, Cid) -> 
   ecs_del:del(Block, Cid).
