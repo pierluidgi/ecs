@@ -6,7 +6,7 @@
   new/0, new/1,
   get/1,
   test/0,
-  add/2, add/3, del/2, like/2, claim/2]).
+  add/2, add/3, merge/2, del/2, like/2, claim/2]).
 
 
 
